@@ -1,0 +1,260 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/bg-mobile.svg") #674baf;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.3;
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 64em) {
+  body {
+    background: url("../img/bg-desktop.svg") #674baf;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-j-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-j-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-a-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 64em) {
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 63.9375em) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+nav {
+  margin: auto;
+  margin-top: 1.875rem;
+  margin-bottom: 3.875rem;
+  max-width: 300px;
+}
+
+nav > * {
+  display: inline-block;
+}
+
+nav > * > img {
+  height: 35px;
+}
+
+@media (min-width: 64em) {
+  nav {
+    margin-top: 2.3rem;
+    margin-bottom: 4rem;
+    max-width: 1310px;
+  }
+  nav > * {
+    display: inline-block;
+  }
+  nav > * > img {
+    height: 48px;
+  }
+}
+
+main {
+  max-width: 300px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main > * > img {
+  max-width: 100%;
+}
+
+main > * {
+  color: #fdfdfd;
+  text-align: center;
+}
+
+main .desktop-container > h1 {
+  font-size: 1.6rem;
+  margin-top: 3.25rem;
+  line-height: 1.6;
+}
+
+main .desktop-container > p {
+  margin-top: 0;
+  margin-bottom: 1.5625rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+main .desktop-container > a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .desktop-container > div > .button {
+  max-width: 100%;
+  display: inline-block;
+  padding: 0.75rem 4.6875rem;
+  background: #fdfdfd;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #674baf;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+main .desktop-container > div > .button:active {
+  color: #fdfdfd;
+  background: #e882e8;
+}
+
+@media (min-width: 64em) {
+  main {
+    max-width: 1310px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main > .hero {
+    min-width: 720px;
+    height: 510px;
+  }
+  main > .desktop-container {
+    margin-left: 3.125rem;
+    text-align: left;
+  }
+  main .desktop-container > h1 {
+    font-size: 2.5rem;
+  }
+  main .desktop-container > p {
+    font-size: 1.18rem;
+    margin-top: 0;
+    margin-bottom: 1.5625rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+  }
+  main .desktop-container > a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .desktop-container > div > .button {
+    max-width: 100%;
+    display: inline-block;
+    padding: 1rem 4.2rem;
+    font-size: 1.18rem;
+  }
+}
+
+footer {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer > .tw-icon {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+footer > * > img {
+  height: 13px;
+  width: 13px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  border-radius: 50%;
+  padding: 5px;
+  border: 1.8px solid white;
+}
+
+footer > * > img:active {
+  -webkit-filter: none;
+          filter: none;
+  cursor: pointer;
+  border: 2px solid #e882e8;
+  background: #674baf;
+}
+
+@media (max-width: 63.9375em) {
+  .page-wrap {
+    height: 780px;
+  }
+}
+
+@media (min-width: 64em) {
+  footer {
+    margin-top: 1.5rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  footer > .ig-icon {
+    padding-right: 5rem;
+  }
+  footer > * > img {
+    height: 18.5px;
+    width: 18.5px;
+    padding: 6.5px;
+    border: 2px solid white;
+  }
+  footer > * > img:active {
+    -webkit-filter: none;
+            filter: none;
+    cursor: pointer;
+    border: 2px solid #e882e8;
+    background: #674baf;
+  }
+}
+/*# sourceMappingURL=style.css.map */

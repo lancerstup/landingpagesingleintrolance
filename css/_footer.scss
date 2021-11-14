@@ -1,0 +1,70 @@
+footer{
+    margin-top:4rem;
+    margin-bottom:4rem;
+    display:flex;
+    width:100%;
+    justify-content: center;
+
+> .tw-icon{
+    padding-left: 0.9375rem;
+    padding-right:0.9375rem ;
+}
+   
+> * > img{
+    height:13px;
+    width:13px;
+    filter: brightness(0) invert(1);
+    border-radius: 50%;
+    padding:5px;
+    border:1.8px solid white;
+}
+
+> * > img:active{
+    filter:none;
+    cursor: pointer;
+    border:2px solid $SoftMagenta;
+    background:$Violet;   
+   
+}
+
+}
+
+.page-wrap{
+@include breakpoint-down(medium){
+    height:780px;
+    
+}
+}
+   
+
+
+
+
+//DESKTOP//
+
+footer{
+    @include breakpoint-up(large){
+        margin-top:1.5rem;
+        justify-content: flex-end;
+
+        > .ig-icon{
+            padding-right:5rem;
+        }
+
+        > * > img{
+            height:18.5px;
+            width:18.5px;
+            padding:6.5px;
+            border:2px solid white;
+        }
+
+        > * > img:active{
+            filter:none;
+            cursor: pointer;
+            border:2px solid $SoftMagenta;
+            background:$Violet;   
+           
+        }
+
+    }
+}

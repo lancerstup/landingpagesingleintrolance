@@ -1,0 +1,40 @@
+nav{
+    margin:auto;
+    margin-top:1.875rem;
+    margin-bottom: 3.875rem;
+    max-width:300px;
+   
+> *{
+    display:inline-block; 
+}
+
+> * > img{
+    height:35px;
+}
+
+
+
+}
+
+
+
+
+//DESKTOP//
+
+nav{
+    @include breakpoint-up(large){
+        margin-top:2.3rem;
+        margin-bottom: 4rem;
+        max-width: 1310px;
+
+        > *{
+            display:inline-block; 
+        }
+        
+        > * > img{
+            height:48px;
+        }
+        
+        
+    }
+}
